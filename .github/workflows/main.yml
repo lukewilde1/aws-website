@@ -24,4 +24,4 @@ jobs:
     #  run: yarn install && npm run-script build
 
     - name: Deploy static site to S3 bucket
-      run: aws s3 sync /aws-website s3://yourbucket.com # TODO: change bucket
+      run: aws s3 sync aws-website s3://yourbucket.com # TODO: change bucket
