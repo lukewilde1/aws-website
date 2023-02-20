@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Name: <input type="text" id="myText" name="name" value="Mickey"><br>
+
+<p>Click the button to display the value of the name attribute of the text field.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  document.getElementById("demo").innerHTML = x;
+  // fetch('http://localhost:10000/articles', {
+  //  headers: {
+  //     'Accept': 'application/json'
+  //  }})
+  // .then(response => response.text())
+  // .then(text => document.getElementById("demo").innerHTML = text)
+}
+</script>
+
+</body>
+</html>
