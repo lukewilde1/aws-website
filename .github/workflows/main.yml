@@ -24,5 +24,5 @@ jobs:
     #  run: yarn install && npm run-script build
 
     - name: Deploy static site to S3 bucket
-      run: aws s3 sync /aws-website s3://yourbucket.com --delete # TODO: change bucket
+      run: aws s3 sync ./index.html s3://yourbucket.com --delete # TODO: change bucket
       # --delete flag will remove any file in the s3 that are not on the "thefoldertodeploy" folder
